@@ -15,8 +15,8 @@
   },
   "scripts": {
     "server": "browser-sync start --config bs-config.js",
-    "build": "npm-run-all -s build:css autoprefixer copy",
-    "watch": "npm-run-all -p w:css w:autoprefixer w:copy server",
+    "build": "npm-run-all -s build:css autoprefixer copy tsc",
+    "watch": "npm-run-all -p w:css w:autoprefixer w:copy w:tsc server",
     "start": "yarn build && yarn watch",
     "build:css": "node-sass --include-path scss src/scss/app.scss src/scss/_app.css --output-style expanded --indent-type space --source-comments",
     "w:css": "node-sass -w --include-path scss src/scss/app.scss src/scss/_app.css --output-style expanded --indent-type space --source-comments",
