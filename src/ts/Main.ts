@@ -41,8 +41,8 @@ class Circle {
  */
 class Canvas {
 
-  canvas: HTMLCanvasElement;
-  renderObjs: Array < object > ;
+  canvas: any;
+  renderObjs: Array < any > ;
   width: number;
   height: number;
   ctx: CanvasRenderingContext2D;
